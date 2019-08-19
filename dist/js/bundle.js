@@ -3842,11 +3842,11 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /*!*************************!*\
   !*** ./src/js/index.js ***!
   \*************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _Search = __webpack_require__(/*! ./models/Search */ \"./src/js/models/Search.js\");\n\nvar _Search2 = _interopRequireDefault(_Search);\n\nvar _searchView = __webpack_require__(/*! ./view/searchView */ \"./src/js/view/searchView.js\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nconsole.log(\"using imported functions! \" + (0, _searchView.add)(5, 3) + \" and \" + (0, _searchView.multiply)(5, 3) + \". \" + _searchView.ID);\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _models_Search__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./models/Search */ \"./src/js/models/Search.js\");\n/* harmony import */ var _view_searchView__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./view/searchView */ \"./src/js/view/searchView.js\");\n\n\nconsole.log(\"using imported functions! \".concat(Object(_view_searchView__WEBPACK_IMPORTED_MODULE_1__[\"add\"])(5, 3), \" and \").concat(Object(_view_searchView__WEBPACK_IMPORTED_MODULE_1__[\"multiply\"])(5, 3), \". \").concat(_view_searchView__WEBPACK_IMPORTED_MODULE_1__[\"ID\"]));\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ }),
 
@@ -3854,11 +3854,11 @@ eval("\n\nvar _Search = __webpack_require__(/*! ./models/Search */ \"./src/js/mo
 /*!*********************************!*\
   !*** ./src/js/models/Search.js ***!
   \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = 'I am an exported string';\n\n//# sourceURL=webpack:///./src/js/models/Search.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ('I am an exported string');\n\n//# sourceURL=webpack:///./src/js/models/Search.js?");
 
 /***/ }),
 
@@ -3866,10 +3866,11 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!***********************************!*\
   !*** ./src/js/view/searchView.js ***!
   \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: add, multiply, ID */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("throw new Error(\"Module build failed (from ./node_modules/babel-loader/lib/index.js):\\nTypeError: Cannot read property 'bindings' of null\\n    at Scope.moveBindingTo (C:\\\\Users\\\\udayk\\\\OneDrive\\\\Desktop\\\\9-Forkify\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\scope\\\\index.js:864:13)\\n    at convertBlockScopedToVar (C:\\\\Users\\\\udayk\\\\OneDrive\\\\Desktop\\\\9-Forkify\\\\node_modules\\\\babel-plugin-transform-es2015-block-scoping\\\\lib\\\\index.js:139:13)\\n    at PluginPass.VariableDeclaration (C:\\\\Users\\\\udayk\\\\OneDrive\\\\Desktop\\\\9-Forkify\\\\node_modules\\\\babel-plugin-transform-es2015-block-scoping\\\\lib\\\\index.js:26:9)\\n    at newFn (C:\\\\Users\\\\udayk\\\\OneDrive\\\\Desktop\\\\9-Forkify\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\visitors.js:193:21)\\n    at NodePath._call (C:\\\\Users\\\\udayk\\\\OneDrive\\\\Desktop\\\\9-Forkify\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\path\\\\context.js:53:20)\\n    at NodePath.call (C:\\\\Users\\\\udayk\\\\OneDrive\\\\Desktop\\\\9-Forkify\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\path\\\\context.js:40:17)\\n    at NodePath.visit (C:\\\\Users\\\\udayk\\\\OneDrive\\\\Desktop\\\\9-Forkify\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\path\\\\context.js:88:12)\\n    at TraversalContext.visitQueue (C:\\\\Users\\\\udayk\\\\OneDrive\\\\Desktop\\\\9-Forkify\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\context.js:118:16)\\n    at TraversalContext.visitSingle (C:\\\\Users\\\\udayk\\\\OneDrive\\\\Desktop\\\\9-Forkify\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\context.js:90:19)\\n    at TraversalContext.visit (C:\\\\Users\\\\udayk\\\\OneDrive\\\\Desktop\\\\9-Forkify\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\context.js:146:19)\\n    at Function.traverse.node (C:\\\\Users\\\\udayk\\\\OneDrive\\\\Desktop\\\\9-Forkify\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\index.js:94:17)\\n    at NodePath.visit (C:\\\\Users\\\\udayk\\\\OneDrive\\\\Desktop\\\\9-Forkify\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\path\\\\context.js:95:18)\\n    at TraversalContext.visitQueue (C:\\\\Users\\\\udayk\\\\OneDrive\\\\Desktop\\\\9-Forkify\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\context.js:118:16)\\n    at TraversalContext.visitMultiple (C:\\\\Users\\\\udayk\\\\OneDrive\\\\Desktop\\\\9-Forkify\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\context.js:85:17)\\n    at TraversalContext.visit (C:\\\\Users\\\\udayk\\\\OneDrive\\\\Desktop\\\\9-Forkify\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\context.js:144:19)\\n    at Function.traverse.node (C:\\\\Users\\\\udayk\\\\OneDrive\\\\Desktop\\\\9-Forkify\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\index.js:94:17)\\n    at NodePath.visit (C:\\\\Users\\\\udayk\\\\OneDrive\\\\Desktop\\\\9-Forkify\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\path\\\\context.js:95:18)\\n    at TraversalContext.visitQueue (C:\\\\Users\\\\udayk\\\\OneDrive\\\\Desktop\\\\9-Forkify\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\context.js:118:16)\\n    at TraversalContext.visitSingle (C:\\\\Users\\\\udayk\\\\OneDrive\\\\Desktop\\\\9-Forkify\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\context.js:90:19)\\n    at TraversalContext.visit (C:\\\\Users\\\\udayk\\\\OneDrive\\\\Desktop\\\\9-Forkify\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\context.js:146:19)\\n    at Function.traverse.node (C:\\\\Users\\\\udayk\\\\OneDrive\\\\Desktop\\\\9-Forkify\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\index.js:94:17)\\n    at traverse (C:\\\\Users\\\\udayk\\\\OneDrive\\\\Desktop\\\\9-Forkify\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\index.js:76:12)\\n    at transformFile (C:\\\\Users\\\\udayk\\\\OneDrive\\\\Desktop\\\\9-Forkify\\\\node_modules\\\\@babel\\\\core\\\\lib\\\\transformation\\\\index.js:88:29)\\n    at runSync (C:\\\\Users\\\\udayk\\\\OneDrive\\\\Desktop\\\\9-Forkify\\\\node_modules\\\\@babel\\\\core\\\\lib\\\\transformation\\\\index.js:45:3)\\n    at runAsync (C:\\\\Users\\\\udayk\\\\OneDrive\\\\Desktop\\\\9-Forkify\\\\node_modules\\\\@babel\\\\core\\\\lib\\\\transformation\\\\index.js:35:14)\\n    at process.nextTick (C:\\\\Users\\\\udayk\\\\OneDrive\\\\Desktop\\\\9-Forkify\\\\node_modules\\\\@babel\\\\core\\\\lib\\\\transform.js:34:34)\\n    at _combinedTickCallback (internal/process/next_tick.js:132:7)\\n    at process._tickCallback (internal/process/next_tick.js:181:9)\");\n\n//# sourceURL=webpack:///./src/js/view/searchView.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"add\", function() { return add; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"multiply\", function() { return multiply; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ID\", function() { return ID; });\nvar add = function add(a, b) {\n  return a + b;\n};\nvar multiply = function multiply(a, b) {\n  return a * b;\n};\nvar ID = 25;\n\n//# sourceURL=webpack:///./src/js/view/searchView.js?");
 
 /***/ }),
 
