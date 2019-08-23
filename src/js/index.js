@@ -14,20 +14,22 @@ import * as searchView from './view/searchView';
  const controlSearch = async () => {
 
     //1. Get uery from view
-    const query = searchView.getInput;
-    console.log(query);
+    const query = searchView.getInput();
 
     if(query){
         //2. New search object and add to state
+        console.log(`Input is ${query}`);
         state.search = new Search(query);
 
         //3. prepare UI for results
+        searchView.clearInput();
+        searchView.clearResults();
 
         //4. Search for recipies
         await state.search.getResults();
 
         //5. Render results on UI
-        console.log(state.search.result);
+        searchView.renderResults(state.search.result);
     }
  }
 
