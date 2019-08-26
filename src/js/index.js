@@ -1,5 +1,5 @@
 import Search from './models/Search';
-import {elements} from './view/base';
+import {elements, renderLoader, clearLoader} from './view/base';
 import * as searchView from './view/searchView'; 
 
 /**Global state of the app
@@ -24,11 +24,13 @@ import * as searchView from './view/searchView';
         //3. prepare UI for results
         searchView.clearInput();
         searchView.clearResults();
+        renderLoader(elements.searchRes);
 
         //4. Search for recipies
         await state.search.getResults();
 
         //5. Render results on UI
+        clearLoader();
         searchView.renderResults(state.search.result);
     }
  }
