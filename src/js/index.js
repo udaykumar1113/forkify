@@ -64,11 +64,11 @@ const controlRecipe = async () =>{
     if(id){
         //prepare UI for changes
 
-        //create recipe object
+        //create recipe object 
         state.recipe = new Recipe(id);
         try{
             await state.recipe.getRecipe();
-
+            state.recipe.parseIngredients();
             //calculate serving and time
             state.recipe.calcTime();
             state.recipe.calcServings();
